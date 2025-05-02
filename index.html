@@ -3,45 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
+    <title>Image Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" class="display" readonly />
-      
-        <div class="buttons">
-          <!-- Row 1 -->
-          <button class="operation">C</button>
-          <button class="operation">←</button>
-          <button class="operation">%</button>
-          <button class="operation">/</button>
-      
-          <!-- Row 2 -->
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button class="operation">*</button>
-      
-          <!-- Row 3 -->
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button class="operation">-</button>
-      
-          <!-- Row 4 -->
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button class="operation">+</button>
-      
-          <!-- Row 5 -->
-          <button>0</button>
-          <button>.</button>
-          <button class="operation">=</button>
-          <button disabled class="operation">&#xf1ec;</button>
-        </div>
-      </div>
-  <script src="script.js"></script>    
+
+  <div class="gallery-container">
+    <h1>Welcome to Image Gallery</h1>
+    <div class="image-box">
+      <img src="images/img1.png" alt="Gallery Image" id="main-image">
+    </div>
+    <div class="buttons">
+      <button onclick="prevImage()">&#8592; Prev</button>
+      <button onclick="nextImage()">Next &#8594;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
