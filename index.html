@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegant Portfolio</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="gallery-container">
-    <h1>Welcome to Image Gallery</h1>
-    <div class="image-box">
-      <img src="images/img1.png" alt="Gallery Image" id="main-image">
-    </div>
-    <div class="buttons">
-      <button onclick="prevImage()">&#8592; Prev</button>
-      <button onclick="nextImage()">Next &#8594;</button>
-    </div>
-  </div>
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <script src="script.js"></script>
+  <section id="hero" data-aos="fade-up">
+    <h1>Hello, I'm Sakshi kedar</h1>
+    <p>Frontend Developer | UI Designer</p>
+  </section>
 
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+      I design and develop modern websites that are responsive, accessible, and visually appealing.
+    </p>
+  </section>
+
+  <section id="projects" data-aos="zoom-in">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A clean UI classes website page built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>A Coffee Shop Website Page designed Using HTML,CSS,JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Sakshi Kedar. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
